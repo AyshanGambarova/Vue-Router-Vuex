@@ -21,9 +21,6 @@ const getUsers = computed(() => {
   return store.getters.getUsers;
 });
 
-const users = computed(() => {
-  return store.state.users
-})
 onMounted(() => {
   // dispatch the fetchUsers action which commits a mutation to update the state
   store.dispatch("fetchUsers");
